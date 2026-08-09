@@ -1,6 +1,6 @@
 import cantools
 import logging
-from loader import load_log
+from can_validator.loader import load_log
 
 logger = logging.getLogger(__name__)
 
@@ -46,6 +46,7 @@ def decode_log(db:cantools.database.Database, entries:list[dict])->list:
     return decodedLogs
 
 
-db = load_db("dbc/vehicle.dbc")
-entries = load_log("data/sample_log.csv")
-decode_log(db,entries)
+if __name__ == "__main__":
+    db = load_db("dbc/vehicle.dbc")
+    entries = load_log("data/sample_log.csv")
+    decode_log(db,entries)

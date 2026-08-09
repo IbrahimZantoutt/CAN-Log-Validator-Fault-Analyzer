@@ -1,7 +1,5 @@
 import pytest
 
-import sys
-sys.path.append("src")
 from can_validator.loader import load_log
 
 

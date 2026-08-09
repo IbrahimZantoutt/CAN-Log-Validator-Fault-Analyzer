@@ -39,5 +39,6 @@ def load_log(file_path: str, continueMode=False)-> list[dict]:
     #print(listAll)
     return listAll
 
-load_log("data/sample_log.csv")
-#load_log("data/sample_log_invHex.csv",True)
+if __name__ == "__main__":
+    load_log("data/sample_log.csv")
+    #load_log("data/sample_log_invHex.csv",True)
