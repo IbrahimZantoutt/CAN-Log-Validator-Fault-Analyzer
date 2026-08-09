@@ -45,8 +45,8 @@ def decode_log(db:cantools.database.Database, entries:list[dict])->list:
     #print(decodedLogs)
     return decodedLogs
 
-
 if __name__ == "__main__":
     db = load_db("dbc/vehicle.dbc")
     entries = load_log("data/sample_log.csv")
-    decode_log(db,entries)
+    #entries = load_log("data/sample_log_invID.csv")
+    decode_log(db,[{'timestamp': 0.0, 'message_id': 213, 'data': b'2\x00\xe6\x00'}, {'timestamp': 0.02, 'message_id': 213, 'data': b'3\x00\xe6\x00'}, {'timestamp': 0.04, 'message_id': 13, 'data': b'4\x00\xe6\x00'}, {'timestamp': 0.1, 'message_id': 16, 'data': b'\x05\x01\x00\x00\x00'}, {'timestamp':0.15, 'message_id': 78, 'data': b'2\xff\x04\x00'}, {'timestamp': 0.17, 'message_id': 78, 'data': b'2\xff\x04\x00'}, {'timestamp': 0.19, 'message_id': 78, 'data': b'2\xff\x04\x00'}])

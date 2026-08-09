@@ -20,7 +20,7 @@ def load_log(file_path: str, continueMode=False)-> list[dict]:
                     row["timestamp"] = float(row["timestamp"])
                     strT = row["data"]
                     row["data"] = bytes.fromhex(strT)
-                    # print(row)
+                    #print(row)
                     listAll.append(row)
                 except ValueError:
                     if(continueMode):

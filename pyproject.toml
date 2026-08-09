@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "can-validator"
+version = "0.1.0"
+description = "CAN log validator and fault analyzer"
+requires-python = ">=3.10"
+dependencies = ["cantools"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
