@@ -1,0 +1,1 @@
+row["data"] = bytes.fromhex(row["data"])
