@@ -36,7 +36,7 @@ def load_log(file_path: str, continueMode=False)-> list[dict]:
         raise PermissionError(f"permission error in file at {file_path}")
     except UnicodeDecodeError:
         raise ValueError(f"decoder error for file at {file_path}")
-    print(listAll)
+    #print(listAll)
     return listAll
 
 load_log("data/sample_log.csv")
