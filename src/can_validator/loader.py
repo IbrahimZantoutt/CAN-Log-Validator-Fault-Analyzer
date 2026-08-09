@@ -40,4 +40,4 @@ def load_log(file_path: str, continueMode=False)-> list[dict]:
     return listAll
 
 load_log("data/sample_log.csv")
-load_log("data/sample_log_invHex.csv",True)
+#load_log("data/sample_log_invHex.csv",True)
